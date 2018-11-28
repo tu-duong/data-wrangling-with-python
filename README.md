@@ -6,7 +6,9 @@ By Tu Duong
 The project requires all wrangling efforts: gather, assess, clean. The final purpose of the project is to draw interesting insights via analysis and visualization.	
 
 iPython Notebook: https://github.com/tu-duong/data-wrangling-with-python/blob/master/wrangle_act.ipynb
-Final observation: 
+
+Final observation: https://github.com/tu-duong/data-wrangling-with-python/blob/master/act_report.pdf
+
 
 # 1.	Gathering
 There are 3 different sources of data: WeRateDogs extended archive, data from a file from internet, and data from Tweeter API. While the first two source were easy to gather, the Tweeter API data was a challenge. The challenge come from two issues: the tweets reported in the WeRateDogs were no longer available from Twitter. Perhaps they have been deleted). After this error was treated, the second issue come up: the rate limit. After spending a long time of research and trying various method, I came back to the original solution – ignoring missing data error, and set wait_on_rate_limit=True and wait_on_rate_limit_notify=True). It turns out the solution was not that complicated and it worked well. I should have asked for help instead of spending hours trying different solutions. Documentation from Tweeter was not clear enough for me – both about various limit concept and how to overcome them. 
